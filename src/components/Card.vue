@@ -6,11 +6,17 @@
         <div class="body">
             {{ body }}
         </div>
+        <text-add :listIndex="listIndex" />
     </div>
 </template>
 
 <script>
+import TextAdd from './TextAdd'
+
 export default {
+    components: {
+        TextAdd
+    },
     props: {
         body:{
             type: String,
